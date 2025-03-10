@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | Clothing Brand</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">BrandName</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="cart-btn">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sign Up Section -->
+    <section class="auth">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="signup-name">Full Name:</label>
+            <input type="text" id="signup-name" required>
+
+            <label for="signup-email">Email:</label>
+            <input type="email" id="signup-email" required>
+
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" required>
+
+            <button type="submit">Sign Up</button>
+
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </section>
+
+    <script src="../assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | Clothing Brand</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">BrandName</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="cart-btn">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <h2>Checkout</h2>
+
+        <!-- Cart Summary -->
+        <div class="checkout-summary">
+            <h3>Your Order</h3>
+            <div id="checkout-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <h3>Total: $<span id="checkout-total">0.00</span></h3>
+        </div>
+
+        <!-- Customer Details Form -->
+        <form id="checkout-form">
+            <h3>Customer Details</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" rows="3" required></textarea>
+
+            <h3>Payment Method</h3>
+            <label>
+                <input type="radio" name="payment" value="card" checked> Credit/Debit Card
+            </label>
+            <label>
+                <input type="radio" name="payment" value="paypal"> PayPal
+            </label>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

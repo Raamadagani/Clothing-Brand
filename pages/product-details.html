@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details | Clothing Brand</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">BrandName</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="cart-btn">🛒 Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="product-gallery">
+            <img src="../assets/images/product1.jpg" id="mainImage" alt="Main Product Image">
+            <div class="thumbnail-container">
+                <img src="../assets/images/product1.jpg" class="thumbnail" onclick="changeImage('../assets/images/product1.jpg')">
+                <img src="../assets/images/product1_alt.jpg" class="thumbnail" onclick="changeImage('../assets/images/product1_alt.jpg')">
+                <img src="../assets/images/product1_side.jpg" class="thumbnail" onclick="changeImage('../assets/images/product1_side.jpg')">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h2>Men's Stylish T-Shirt</h2>
+            <p class="price">$25.00</p>
+            <p class="description">This premium cotton t-shirt offers exceptional comfort and style. Perfect for casual wear.</p>
+
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">X-Large</option>
+            </select>
+
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+            </select>
+
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
